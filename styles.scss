@@ -15,19 +15,21 @@
   $extra-bold : 800;
 
 // PALETA DE COLOR, modifique para su propia paleta de color
-  $azul        : #3669A3;
-  $azul-oscuro : #006693;
-  $azul-claro  : #48C2E0;
-  $gold        : #F5A623;
-  $negro       : #000;
-  $blanco      : #fff;
-  $verde       :#92C064;
-  $gris-claro  :#DBDBDB;
-  $gris-text   : #9B9B9B;
-  $more-claro  : #9B9B9B;
-  $solicitar   : #28BEE7;
-  $borde-color : #E8E8E8;
-  $rosa        :#F365A4;
+  $azul         : #3669A3;
+  $azul-oscuro  : #006693;
+  $azul-claro   : #48C2E0;
+  $gold         : #F5A623;
+  $negro        : #000;
+  $blanco       : #fff;
+  $verde        :#92C064;
+  $gris-claro   :#DBDBDB;
+  $gris-text    : #9B9B9B;
+  $more-claro   : #9B9B9B;
+  $solicitar    : #28BEE7;
+  $borde-color  : #E8E8E8;
+  $rosa         :#F365A4;
+  $azul-footer  : #284F7A;
+  $azul-fondo   :#305D91;
 
 
 // ESTILOS BASE
@@ -74,6 +76,9 @@
   @import "tema/footer";
   @import "tema/main";
   @import "tema/aside";
+  @import "tema/preguntas";
+  @import "tema/ingresar";
+
 
 // Modulos. Los componentes que se repiten en varias partes del proyecto
   @import "componentes/modulos";

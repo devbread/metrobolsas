@@ -4720,6 +4720,60 @@ section
       .item-productos-center .item-center-center p span {
         font-weight: 800; }
 
+section.preguntas {
+  background-color: #3669A3;
+  color: #fff; }
+  section.preguntas h5 {
+    font-weight: 700;
+    font-size: 1.1em; }
+  section.preguntas nav ul li {
+    list-style: none;
+    display: block;
+    margin: 10px 15px; }
+    section.preguntas nav ul li a {
+      padding: 10px 15px;
+      border: 1px solid #fff; }
+
+section.entrar {
+  background-color: #305D91;
+  color: #fff; }
+  section.entrar .entrar-text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
+    font-weight: 700; }
+  section.entrar .entrar-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    font-weight: 400; }
+  section.entrar form.formulario {
+    border: 1px solid #FFF;
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%; }
+    section.entrar form.formulario input[type="text"] {
+      width: 100%;
+      display: block;
+      margin: 15px auto;
+      padding: 10px 8px; }
+    section.entrar form.formulario input[type="submit"] {
+      color: #fff;
+      background-color: #F365A4;
+      padding: 20px 10px; }
+  section.entrar .botones {
+    margin: 30px;
+    text-align: center; }
+    section.entrar .botones a {
+      font-family: "Montserrat", sans-serif;
+      color: #FFF;
+      padding: 15px;
+      background-color: #F365A4;
+      font-weight: 700;
+      font-size: 0.8em;
+      display: block;
+      width: auto;
+      margin: 10px;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+
 .boton, .button, button {
   display: inline-block;
   line-height: 2.5em;

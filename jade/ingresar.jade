@@ -62,116 +62,27 @@ html(lang="es")
           //-   img(src="img/logo_ok.svg", alt="Metrogas")
         //-.ed-item.web-80.main-end.cross-center
           | Versión 1.2
-    section
+    section.entrar
       .ed-container.full
-        .ed-item.base-100.no-padding.hd-100
-          .slider
-            img(src="img/slider_1.png", alt="Slide 1")
-          .ed-container  
-            .ed-item.web-30.movil-30.base-100.text-slider
-              img(src="img/logo_metrobolsas.png", alt="")
-              p.text-llamado ¡Ya comenzó la preventa!
-              p.text-title La mejor calefacción al mejor precio
-            .ed-item.base-100.movil-100.hd-20.web-20.login-slider
-              h5 Ingresar por dirección
-              input.ed-item.base-100(type="text",placeholder="Rut: 172738327-7",name="Rut")
-              input.ed-item.base-100(type="text",placeholder="Comuna",name="")
-              input.ed-item.base-100(type="text",placeholder="Calle",name="")
-              input.ed-item.base-100(type="text",placeholder="Número Cliente",name="Numero-cliente")
-              input.ed-item.base-100(type="text",placeholder="Depto/Casa",name="depto")
-              a.ed-item.btn.base-100(href="") entrar
-              h5 Ingresar por número cliente
-              input.ed-item.base-100(type="text",placeholder="Rut: 172738327-7",name="Rut")
-              input.ed-item.base-100(type="text",placeholder="Comuna",name="")
-              a.btn.ed-item.base-100(href="") entrar
+        .ed-item.base-100
+          .entrar-text
+            h2 Entrar
+            p Puedes entrar con tus datos de domicilio o puedes entrar ingresando tu número de cliente.
+        .ed-item.base-100
+          .botones
+            a(href="#") Ingresar por dirección
+            <span>O</span>
+            a(href="#") Ingresar por número de cliente
+        .ed-item.base-100
+          form.formulario
+            h5 Ingresar por dirección
+            input(type="text",placeholder="Rut: 172738327-7",name="Rut")
+            input(type="text",placeholder="Comuna",name="")
+            input(type="text",placeholder="Calle",name="")
+            input(type="text",placeholder="Número Cliente",name="Numero-cliente")
+            input(type="text",placeholder="Depto/Casa",name="depto")
+            input(type="submit" value="ingresar")
 
-    //- section
-    //-   .ed-container.full
-    //-     .ed-item.web-100.no-padding.hd-100
-    //-       .banner
-    //-         img(src="img/slider_1.png", alt="una caldera es más que seguridad")
-    //-       .claim-banner
-    //-         h1 UNA CALDERA ES 
-    //-           span MÁS SEGURIDAD
-    //-         p DESDE 2.500.000 CON INSTALACIÓN.
-    //-         hr
-    //-         ul.data-product
-    //-           li 
-    //-             span.bullet-one
-    //-             |El gas Natural es más económico que otros combustibles
-    //-           li 
-    //-             span.bullet-two
-    //-             |Produce 0% contaminación intradomiciliaria
-    //-           li 
-    //-             span.bullet-three
-    //-             |No produce humedad dentro de tu hogar
-    //-           li 
-    //-             span.bullet-four
-    //-             |Disfrutas de suministro continuo
-    //-           //- li.bullet El gas Natural es más económico que otros combustibles
-    //-           //- li.bullet Produce 0% contaminación intradomiciliaria
-    //-           //- li.bullet No produce humedad dentro de tu hogar 
-    //-           //- li.bullet Disfrutas de suministro continuo
-    section.video
-      .ed-container
-          .ed-item.base-100.web-30
-            h3 ¿Qué son las
-            h3 Metrobolsas?
-          .ed-item.base-100.web-70
-            p un sistema que te permitirá ahorrar en calefacción durante los meses de mayo a septiembre de 2017.
-      .ed-container
-        iframe(src="https://player.vimeo.com/video/151650413?title=0&byline=0&portrait=0",width="100%",height="600px",frameborder="0")
-    section
-      .ed-container.grafico
-        .ed-item.web-100
-          nav
-            ul
-              li.menu__item
-                a.menu__link(href="#") ¿Cómo operan las metrobolsas?
-              li.menu__item
-                a.menu__link(href="#") Ahorra este invierno
-              li.menu__item
-                a.menu__link(href="#") Aplana tu gasto
-              li.menu__item
-                a.menu__link(href="#") Asegura tu tarifa
-        .ed-item.base-100.web-30.texto
-          h5 Las Metrobolsas se activan durante los meses de mayo a septiembre,
-          h6 ambos inclusive y operan sobre los 60m3
-          p Durante este periodo tu consumo se facturará de la siguiente manera:
-          p Los primeros 60m3 de gas natural se facturarán a tarifa residencial BCR01
-          p Todo el consumo del mes superior a los 60m3, será descontado de tu Metrobolsa
-          p Una vez agotados los metros cúbicos de tu Metrobolsa, tu consumo de gas natural será facturado de acuerdo a  la tarifa residencial BCR01
-        .ed-item.base-100.web-70.imagen
-          img(src="img/grafico.jpg")
-    
-    section.compras
-      .ed-container.full
-        .ed-item.base-100
-          .imagen-familia
-            img(src="img/fondo_compras.jpg")
-            .texto-familia
-              p.text-compras Varias  Metrobolsas para elegir
-              h3.text-compras Una a tu medida
-              h3.text-compras desde  $000.0000 hasta $0.000.000 
-    section.preguntas
-      .ed-container.full
-        .ed-item.base-100
-          .cuadro-preguntas
-            h5 Preguntas Frecuentes
-            nav
-              ul
-                li
-                  a(href="#") ¿Qué son las Metrobolsas?
-                li
-                  a(href="#") ¿Cuándo se pueden usar las Metrobolsas?
-                li
-                  a(href="#") ¿Cómo operan las Metrobolsas?
-                li
-                  a(href="#") ¿Qué pasa si mi Metrobolsa se agota antes de que finalice el periodo de calefacción?
-                li
-                  a(href="#") ¿Que pasa si  me sobran metros cúbicos de mi Metrobolsa una vez  finalizado el periodo de calefacción?
-                li
-                  a(href="#") ¿A quiénes están dirigidas las Metrobolsas?
     section.legal
       .ed-container
         .ed-item.base-100.tablet-100
