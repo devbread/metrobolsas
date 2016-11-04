@@ -6,29 +6,26 @@ section.mainban{
 	margin-top: 0;
 }
 section.video{
-	.ed-container{
-		.ed-item{
-			margin: 20px 0;
-			h3{
-				color: $blanco;
-				background-color:$rosa;
-				padding:10px;
-				font-size: 2.1rem;
-				font-family: $body--font-family;
-				margin: 0;
-			}
-		}
-		.ed-item{
-			p{
-				color: $azul;
-				top:  80px;
-    			position: relative;
-    			font-family: $body--font-family;
-    			font-weight: $bold;
-			}
-		}
+	.titulo-bolsa{
+		margin-top: 1em;
+		span{
+			color: $blanco;
+			background-color:$rosa;
+			padding:5px 13px;
+			font-size: 2.1em;
+			font-family: $body--font-family;
+			display: inline-block;
+			margin: 0;
+			font-weight: bold;
+		}	
+	}//titulo-bolsa
+	.bajada-bolsa{
+		color: $azul;
+		font-family: $body--font-family;
+		font-weight: $bold;
+		font-size: 0.9em;
 	}
-}
+}//video
 section
 	.grafico{
 		margin:5% auto;

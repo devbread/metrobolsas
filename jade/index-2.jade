@@ -65,60 +65,42 @@ html(lang="es")
     section
       .ed-container.full
         .ed-item.base-100.no-padding.hd-100
-          .slider
-            img(src="img/slider_1.png", alt="Slide 1")
-          .ed-container  
-            .ed-item.web-30.movil-30.base-100.text-slider
-              img(src="img/logo_metrobolsas.png", alt="")
-              p.text-llamado ¡Ya comenzó la preventa!
-              p.text-title La mejor calefacción al mejor precio
-            .ed-item.base-100.movil-100.hd-20.web-20.login-slider
-              h5 Ingresar por dirección
-              input.ed-item.base-100(type="text",placeholder="Rut: 172738327-7",name="Rut")
-              input.ed-item.base-100(type="text",placeholder="Comuna",name="")
-              input.ed-item.base-100(type="text",placeholder="Calle",name="")
-              input.ed-item.base-100(type="text",placeholder="Número Cliente",name="Numero-cliente")
-              input.ed-item.base-100(type="text",placeholder="Depto/Casa",name="depto")
-              a.ed-item.btn.base-100(href="") entrar
-              h5 Ingresar por número cliente
-              input.ed-item.base-100(type="text",placeholder="Rut: 172738327-7",name="Rut")
-              input.ed-item.base-100(type="text",placeholder="Comuna",name="")
-              a.btn.ed-item.base-100(href="") entrar
+          .slide
+            //-img(src="img/slider_1.png", alt="Slide 1")
+            .claim-bannerM
+              form#adress
+                  h5 Ingresar por dirección
+                  input(type="text",placeholder="Rut: 172738327-7",name="Rut")
+                  input(type="text",placeholder="Comuna",name="")
+                  input(type="text",placeholder="Calle",name="")
+                  input(type="text",placeholder="Número Cliente",name="Numero-cliente")
+                  input(type="text",placeholder="Depto/Casa",name="depto")
+                  a.ed-(href="") entrar
+                  h5 Ingresar por número cliente
+                  input(type="text",placeholder="Rut: 172738327-7",name="Rut")
+                  input(type="text",placeholder="Comuna",name="")
+                  input(type="submit", value="enviar") 
+              .claim-box
+                .claim-box_img
+                  img(src="img/logo_metrobolsas.png", alt="")
+                p.text-llamado ¡Ya comenzó la preventa!
+                .box-text-title
+                  span.text-title La mejor 
+                  span.text-title calefacción 
+                  span.text-title al mejor precio
+              .down.circle
+                i.ion-chevron-down
 
-    //- section
-    //-   .ed-container.full
-    //-     .ed-item.web-100.no-padding.hd-100
-    //-       .banner
-    //-         img(src="img/slider_1.png", alt="una caldera es más que seguridad")
-    //-       .claim-banner
-    //-         h1 UNA CALDERA ES 
-    //-           span MÁS SEGURIDAD
-    //-         p DESDE 2.500.000 CON INSTALACIÓN.
-    //-         hr
-    //-         ul.data-product
-    //-           li 
-    //-             span.bullet-one
-    //-             |El gas Natural es más económico que otros combustibles
-    //-           li 
-    //-             span.bullet-two
-    //-             |Produce 0% contaminación intradomiciliaria
-    //-           li 
-    //-             span.bullet-three
-    //-             |No produce humedad dentro de tu hogar
-    //-           li 
-    //-             span.bullet-four
-    //-             |Disfrutas de suministro continuo
-    //-           //- li.bullet El gas Natural es más económico que otros combustibles
-    //-           //- li.bullet Produce 0% contaminación intradomiciliaria
-    //-           //- li.bullet No produce humedad dentro de tu hogar 
-    //-           //- li.bullet Disfrutas de suministro continuo
+
     section.video
       .ed-container
           .ed-item.base-100.web-30
-            h3 ¿Qué son las
-            h3 Metrobolsas?
+            .titulo-bolsa
+              span ¿Qué son las 
+              span Metrobolsas?
           .ed-item.base-100.web-70
-            p un sistema que te permitirá ahorrar en calefacción durante los meses de mayo a septiembre de 2017.
+            p.bajada-bolsa un sistema que te permitirá ahorrar en calefacción durante los meses de mayo a septiembre de 2017.
+    section.video
       .ed-container
         iframe(src="https://player.vimeo.com/video/151650413?title=0&byline=0&portrait=0",width="100%",height="600px",frameborder="0")
     section
