@@ -1,0 +1,155 @@
+section{
+	.slide{
+		width: 100%;
+		background-size:cover;
+		position: relative;
+		min-height: 560px;
+		background-color: $azul-oscuro;
+		img{
+			display: block;
+		}
+		@include desde (web){
+			height: auto;
+			position:relative;
+		}
+	}//slide
+
+	.claim-bannerM{
+		position: absolute;
+		top: 50px;
+		left: 20px;
+
+		form#adress{
+			background-color:$blanco;
+			padding:20px;
+			width: 40%;
+			display: none;
+			h5{
+				margin-top: 0;
+				margin-bottom: 10px;
+				color: $azul;
+			}
+			input[type="text"]{
+				width: 100%;
+				padding:4px;
+				border: none;
+				border:1px solid $gris-claro;
+				margin-bottom: 5px;
+			}
+
+			input[type="submit"]{
+				background-color: $azul-oscuro;
+				border: none;
+				width: 100%;
+				padding: 8px;
+				border-radius: 3px;
+				color: $blanco;
+				font-weight: $bold;
+				font-size: 1.1em;
+			}
+
+		}//form		
+		
+		.claim-box{
+			width: 100%;
+			.claim-box_img{
+				width: 60%;
+			}
+			.text-llamado{
+				text-align:left;
+				background-color:$azul;
+				color:$blanco;
+				font-family: 'Montserrat' , sans-serif;
+				font-weight: $extra-bold;
+				font-size: 1em;
+				padding: 5px 15px;
+				margin: 30px 0 0 0;
+				display: inline-block;
+			}
+			.box-text-title{
+				.text-title{
+					text-align:left;
+					background-color:$rosa;
+					font-family: 'Montserrat' , sans-serif;
+					color:$blanco;
+					font-weight: $bold;
+					font-size: 1.8em;
+					padding: 1px 10px;
+					display: inline-block;
+				}
+			}
+
+		}//.claim-box
+		.down{
+			background-color: $rosa;
+			padding: 0px;
+			width: 40px;
+			height: 40px;
+			color: $blanco;
+			margin: 75px auto 0 auto;
+			text-align: center;
+			line-height: 45px;
+		}
+	}
+
+	.text-slider{
+		padding:30px 20px;
+		@include desde (web){
+			position: absolute;
+			top: 185px;
+			left: 30px;
+			width: 455px;
+			height: 250px;
+			padding:20px 35px;
+		}
+		@include desde (prehd){
+			left: 115px;
+		}
+		@include desde (hd){
+			left: 320px;//139
+		}
+
+		p.text-title{
+			text-align:left;
+			background-color:$rosa;
+			font-family: 'Montserrat' , sans-serif;
+			color:$blanco;
+			font-weight: $bold;
+			font-size: 1.4em;
+			width: 90%;
+			letter-spacing: 1px;
+			margin-bottom: 0.3em;
+			margin: 0 0 10px 0;
+			line-height: 1.5;
+		}	
+	}
+	.login-slider{
+		background-color:$blanco;
+		padding:20px;
+		position:absolute;
+		top: 189px;
+		left: 30px;
+		width: 257px;
+		height: 479px;
+		h5{
+			color:$azul;
+		}
+		input.ed-item.base-100 {
+			padding:5px;
+			margin: 0 0 12px 0;
+			border: 1px solid $gris-claro;
+			border-radius:5px;
+		}
+		a.btn{
+			font-size: 0.8em;
+			color: $blanco;
+			background-color:$azul;
+			padding:8px 105px;
+			width: 100%;
+			text-align: center;
+			border-radius:5px;
+			font-family: 'Montserrat',sans-serif;
+			font-weight: $bold;
+		}
+	}
+}
