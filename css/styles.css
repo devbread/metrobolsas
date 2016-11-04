@@ -4060,6 +4060,17 @@ section.pasos .bolsas-comprar {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     font-weight: 700; }
+section.pasos input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #F365A4;
+  padding: 10px 30px;
+  border: 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 20px; }
 
 section .slide {
   width: 100%;

@@ -150,4 +150,16 @@ section.pasos{
 			font-weight: $bold;
 		}
 	}
+	input[type="submit"]{
+		font-family: $body--font-family;
+		color:$blanco;
+		background-color:$rosa;
+		padding:10px 30px;
+		border:0;
+		box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+		border-radius:3px;
+		font-weight: $bold;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
