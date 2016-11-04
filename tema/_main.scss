@@ -93,41 +93,41 @@ section
 		}
 	}
 section.compras{
-	.ed-container.full{
-		img{
-			position:relative;
-			z-index:-1;
+
+.imagen-familia{
+	position: relative;
+	.texto-familia{
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		z-index: 10;
+		p.text-compras{
+			background-color:$azul;
+			color:$blanco;
+			font-family: 'Montserrat' , sans-serif;
+			text-align: center;
+			font-weight: $bold;
+			font-size: 1.5em;
+			letter-spacing: 1px;
+			margin-bottom: 0.3em;
+			margin: 0;
+			padding: 10px 15px;
+			line-height: 1.5;
+			text-align: left;
+			display: inline-block;
+		}
+		h3.text-compras{
+			color: $blanco;
+			background-color:$rosa;
+			padding:10px;
+			font-size: 2.1rem;
+			font-family: $body--font-family;
+			margin: 0;
 		}
 	}
-	.ed-container{
-		.ed-item.base-100{
-			position:absolute;
-			top:50px;
-			left:50px;
-			z-index: 1;
-			p.text-compras{
-				background-color:$azul;
-				color:$blanco;
-				font-family: 'Montserrat' , sans-serif;
-				text-align: center;
-				font-weight: $bold;
-				font-size: 0.8em;
-				width: 20%;
-				letter-spacing: 1px;
-				margin-bottom: 0.3em;
-				margin: 0 auto 10px auto;
-				line-height: 1.5;
-			}
-			h3.text-compras{
-				color: $blanco;
-				background-color:$rosa;
-				padding:10px;
-				font-size: 2.1rem;
-				font-family: $body--font-family;
-				margin: 0;
-			}
-		}
-	}
+}
+
+
 }
 
 section.main,section.mainban{

@@ -3207,33 +3207,34 @@ section
           font-size: 0.9em;
           font-weight: 700; }
 
-section.compras .ed-container.full img {
-  position: relative;
-  z-index: -1; }
-section.compras .ed-container .ed-item.base-100 {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 1; }
-  section.compras .ed-container .ed-item.base-100 p.text-compras {
-    background-color: #3669A3;
-    color: #fff;
-    font-family: 'Montserrat' , sans-serif;
-    text-align: center;
-    font-weight: 700;
-    font-size: 0.8em;
-    width: 20%;
-    letter-spacing: 1px;
-    margin-bottom: 0.3em;
-    margin: 0 auto 10px auto;
-    line-height: 1.5; }
-  section.compras .ed-container .ed-item.base-100 h3.text-compras {
-    color: #fff;
-    background-color: #F365A4;
-    padding: 10px;
-    font-size: 2.1rem;
-    font-family: "Montserrat", sans-serif;
-    margin: 0; }
+section.compras .imagen-familia {
+  position: relative; }
+  section.compras .imagen-familia .texto-familia {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10; }
+    section.compras .imagen-familia .texto-familia p.text-compras {
+      background-color: #3669A3;
+      color: #fff;
+      font-family: 'Montserrat' , sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      margin-bottom: 0.3em;
+      margin: 0;
+      padding: 10px 15px;
+      line-height: 1.5;
+      text-align: left;
+      display: inline-block; }
+    section.compras .imagen-familia .texto-familia h3.text-compras {
+      color: #fff;
+      background-color: #F365A4;
+      padding: 10px;
+      font-size: 2.1rem;
+      font-family: "Montserrat", sans-serif;
+      margin: 0; }
 
 section.main h1, section.mainban h1 {
   font-weight: 800;
