@@ -1,0 +1,49 @@
+section.entrar{
+	background-color:$azul-fondo;
+	color:$blanco;
+	.entrar-text{
+		h2{
+			font-family: $body--font-family;
+			font-size: 1.1em;
+			font-weight: $bold;
+		}
+		p{
+			font-family: $body--font-family;
+			font-size: 0.8em;
+			font-weight: $normal;
+		}
+	}
+	form.formulario{
+		border:1px solid #FFF;
+		padding:25px 20px;
+		text-align:center;
+		width: 100%;
+		input[type="text"]{
+			width: 100%;
+			display: block;
+			margin:15px auto;
+			padding:10px 8px;
+		}
+		input[type="submit"]{
+			color:$blanco;
+			background-color:$rosa;
+			padding:20px 10px;
+		}
+	}
+	.botones{
+		margin: 30px;
+		text-align: center;
+		a{
+			font-family: $body--font-family;
+			color:#FFF;
+			padding: 15px;
+			background-color:$rosa;
+			font-weight: $bold;
+			font-size: 0.8em;
+			display: block;
+			width: auto;
+			margin: 10px;
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+		}
+	}
+}

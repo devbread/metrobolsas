@@ -1,0 +1,21 @@
+section.preguntas{
+	background-color:$azul;
+	color:$blanco;
+	h5{
+		font-weight: $bold;
+		font-size: 1.1em; 
+	}
+	nav{
+		ul{
+			li{
+				list-style: none;
+				display: block;
+				margin:10px 15px;
+				a{
+					padding:10px 15px;
+					border: 1px solid $blanco;
+				}
+			}
+		}
+	}
+}
