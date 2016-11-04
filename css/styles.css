@@ -3125,16 +3125,16 @@ section.main {
 section.mainban {
   margin-top: 0; }
 
-section.video .ed-container .ed-item.base-30.web-30 {
+section.video .ed-container .ed-item {
   margin: 20px 0; }
-  section.video .ed-container .ed-item.base-30.web-30 h3 {
+  section.video .ed-container .ed-item h3 {
     color: #fff;
     background-color: #F365A4;
     padding: 10px;
     font-size: 2.1rem;
     font-family: "Montserrat", sans-serif;
     margin: 0; }
-section.video .ed-container .ed-item.base-70.web-70 p {
+section.video .ed-container .ed-item p {
   color: #3669A3;
   top: 80px;
   position: relative;
@@ -3143,9 +3143,18 @@ section.video .ed-container .ed-item.base-70.web-70 p {
 
 section
 .grafico {
+  margin: 5% auto;
   font-family: "Montserrat", sans-serif;
   padding: 10px;
   border: 1px solid #F365A4; }
+  @media screen and (max-width: 767px) {
+    section
+    .grafico {
+      border: 0; } }
+  @media screen and (max-width: 479px) {
+    section
+    .grafico {
+      border: 0; } }
   section
   .grafico .ed-item.texto h5 {
     color: #F365A4;
@@ -3199,9 +3208,13 @@ section
           font-weight: 700; }
 
 section.compras .ed-container.full img {
-  position: relative; }
+  position: relative;
+  z-index: -1; }
 section.compras .ed-container .ed-item.base-100 {
-  position: absolute; }
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1; }
   section.compras .ed-container .ed-item.base-100 p.text-compras {
     background-color: #3669A3;
     color: #fff;

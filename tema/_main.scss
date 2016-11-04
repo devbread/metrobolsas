@@ -7,7 +7,7 @@ section.mainban{
 }
 section.video{
 	.ed-container{
-		.ed-item.base-30.web-30{
+		.ed-item{
 			margin: 20px 0;
 			h3{
 				color: $blanco;
@@ -18,7 +18,7 @@ section.video{
 				margin: 0;
 			}
 		}
-		.ed-item.base-70.web-70{
+		.ed-item{
 			p{
 				color: $azul;
 				top:  80px;
@@ -31,9 +31,16 @@ section.video{
 }
 section
 	.grafico{
+		margin:5% auto;
 		font-family: $body--font-family;
 		padding:10px;
 		border:1px solid $rosa;
+		@include hasta(tablet){
+			border:0;
+		}
+		@include hasta(movil){
+			border:0;
+		}
 		.ed-item{
 			&.texto{
 				h5{
@@ -89,11 +96,15 @@ section.compras{
 	.ed-container.full{
 		img{
 			position:relative;
+			z-index:-1;
 		}
 	}
 	.ed-container{
 		.ed-item.base-100{
 			position:absolute;
+			top:50px;
+			left:50px;
+			z-index: 1;
 			p.text-compras{
 				background-color:$azul;
 				color:$blanco;
