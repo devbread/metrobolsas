@@ -1,0 +1,46 @@
+footer{
+	background-color: $azul;
+	margin-top: 35px;
+	padding:35px;
+	@include desde (tablet){
+		padding:15px;
+	}
+	a{
+		text-align: center;
+		width: 100%;
+		color: $blanco;
+		font-weight: $extra-bold;
+		display: block;
+		text-decoration: underline;
+		font-size: 0.7em;
+		@include desde (tablet){
+			text-align: left;
+			font-size: 0.8em;
+			margin-top: 12px;
+		}
+		@include desde (web){
+			margin-top: 6px;
+		}
+	}
+	.logo-footer{
+		text-align: center;
+		margin-top:35px;
+		img{
+			width: 60%;
+		}
+		@include desde (tablet){
+			text-align: right;
+			margin-top: 0;
+			img{
+				width: 50%;
+			}
+		}
+		@include desde (web){
+			margin-top: 5px;
+			margin-right: 10px;
+			img{
+				width: 25%;
+			}
+		}
+	}
+}

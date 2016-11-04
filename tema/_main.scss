@@ -1,0 +1,1874 @@
+section.main{
+	margin-top: 25px;
+}
+
+section.mainban{
+	margin-top: 0;
+}
+section.video{
+	.ed-container{
+		.ed-item.base-30.web-30{
+			margin: 20px 0;
+			h3{
+				color: $blanco;
+				background-color:$rosa;
+				padding:10px;
+				font-size: 2.1rem;
+				font-family: $body--font-family;
+				margin: 0;
+			}
+		}
+		.ed-item.base-70.web-70{
+			p{
+				color: $azul;
+				top:  80px;
+    			position: relative;
+    			font-family: $body--font-family;
+    			font-weight: $bold;
+			}
+		}
+	}
+}
+section
+	.grafico{
+		font-family: $body--font-family;
+		padding:10px;
+		border:1px solid $rosa;
+		.ed-item{
+			&.texto{
+				h5{
+					color:$rosa;
+					font-size: 1.2rem;
+				}
+				h6{
+					color:$azul;
+					font-size: 1.1rem;
+				}
+				p{
+					font-size:0.9rem;
+					color: $gris-text; 
+				}
+			}
+			&.imagen{
+				padding: 0 50px;
+			}
+			nav{
+				visibility: visible;
+    			position: static;
+    			width: 100%;
+				ul{
+					background-color: $azul;
+					flex-direction: row;
+					list-style-type:none;
+					transform: none;
+    				padding-right: 30px;
+					li.menu__item{
+						transform: none;
+						box-direction:normal;
+						margin-left: 45px;
+						a.menu__link{
+							    display: inline-block;
+							    position: relative;
+							    font-size: 30px;
+							    padding: 15px 0;
+							    font-weight: 300;
+							    color: white;
+							    text-decoration: none;
+							    color: white;
+							    -webkit-transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+							    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+							    font-size: 0.9em;
+							    font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+section.compras{
+	.ed-container.full{
+		img{
+			position:relative;
+		}
+	}
+	.ed-container{
+		.ed-item.base-100{
+			position:absolute;
+			p.text-compras{
+				background-color:$azul;
+				color:$blanco;
+				font-family: 'Montserrat' , sans-serif;
+				text-align: center;
+				font-weight: $bold;
+				font-size: 0.8em;
+				width: 20%;
+				letter-spacing: 1px;
+				margin-bottom: 0.3em;
+				margin: 0 auto 10px auto;
+				line-height: 1.5;
+			}
+			h3.text-compras{
+				color: $blanco;
+				background-color:$rosa;
+				padding:10px;
+				font-size: 2.1rem;
+				font-family: $body--font-family;
+				margin: 0;
+			}
+		}
+	}
+}
+
+section.main,section.mainban{
+	
+	h1{
+		font-weight: $extra-bold;
+		font-size: 1.5em;
+		text-align: left;
+		border-bottom: 1px solid $azul-claro;
+		color: $azul-claro;
+		text-transform: uppercase;
+		//padding: 0 0 5px 0;
+		margin: 15px;
+		@include desde (web){
+			margin-left: 30px;
+			padding-bottom: 15px;
+			margin-bottom: 20px;
+		}
+	}
+	.filter{
+		width: 100%;
+		position: relative;
+		display: inline-block;
+		padding: 5px 15px 0px 15px;
+
+		@include desde (web){
+			margin-top: 18px;
+			padding: 5px 30px 0px 15px;
+
+		}
+		//input
+
+		input[type="checkbox"]{
+			display: none;
+
+		}
+
+		input[type="checkbox"]:checked ~ label{
+			
+		}
+
+		input[type="checkbox"]:checked ~ ul {
+			display: block;
+
+		}
+
+		label{
+			width: 100%;
+			display: block;
+			padding:8px;
+			color:$azul-claro;
+			border:1px solid $azul-claro;
+			font-size: 1em;
+			text-transform: uppercase;
+			cursor: pointer;
+			
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    position: relative;
+		    i{
+		    	position: absolute;
+		    	right: 10px;
+		    }
+		    @include desde (web){
+		    	font-size: 0.8em;
+		    	font-weight: $bold;
+		    }
+		}//label
+		
+		ul{
+			
+			list-style: none;
+			text-align: left;
+			width: 100%;
+			z-index: 1;
+			display: none;
+			padding:0;
+			margin: 0;
+			@include desde (web){
+				position: absolute;
+				width: 82.5%;
+			}
+
+			@include desde (prehd){
+				width: 83.8%;
+			}
+
+			@include desde (hd){
+				position: absolute;
+				width: 83.5%;
+			}
+
+			li{
+				padding:15px;
+				background-color: $azul-claro;
+				border-bottom: 1px solid $blanco;
+				cursor: pointer;
+				// &:hover{
+				// 	background-color: $azul;
+				// 	color: $blanco;
+				// }
+				a{
+					color: $blanco;
+					text-transform: uppercase;
+					text-decoration: none;
+					font-weight: normal;
+					@include desde (web){
+						font-size: 0.9em;
+					}
+				}
+				//aux
+				.bold-center{
+					font-weight: $extra-bold;
+					text-align: center;
+					display: block;
+					@include desde (web){
+						font-size: 0.78em;
+					}
+				}
+			}
+		}
+
+	}
+
+
+	//helper color
+	
+	.bgc-1{
+		background-color: #f9f9f9 !important;
+	}
+	.bgc-2{
+		background-color: $azul-claro !important;
+	}
+
+	.vertical-centered {
+	  -ms-display: flex;
+	  display: flex;
+	  /* alineacion vertical */
+	  align-items: center;
+	   /* alineacion horizontal */
+	  justify-content: center;
+	}
+
+
+	//productos destacados
+
+//prod.destacados desde web
+
+		.destacados{
+			display: none;
+			width: 100%;
+			border-bottom:1px solid $azul-claro;
+			//margin-bottom: 50px;
+			margin:0 !important;
+			padding-bottom:2em;
+			@include desde (web){
+				display: block;
+
+				@include cuadricula(destacados_prod,3);
+			}
+			.destacados_prod{
+				position: relative;
+				//background-color: #f9f9f9;
+				padding:25px 0;
+
+				.item-gif-destacados{
+					position: absolute;
+					left: 50px;
+					width: 25%;
+					top:5px;//45
+				}
+				.item-instalacion-destacados{
+					width: 27%;
+    				top: 140px;
+    				right: 40px;
+    				position: absolute;
+    				padding:10px 8px;
+    				background-color: $gold;
+    				color:$blanco;
+    				font-size: 0.7em;
+    				font-weight: $bold;
+				}
+				.img-prod-destacados{
+					text-align: center;
+					img{
+						width: 65%;
+					}
+				}
+				.info-destacado-prod{
+					padding:0 25px;
+					background-color: #f9f9f9;
+					h2{
+						color:$azul-claro;
+						font-weight: $extra-bold;
+						font-size: 1.5em;
+						text-align: left;
+						margin: 0 0 1em 0;
+					}
+					.tarjetas{
+						margin-bottom: 1em;
+					}
+					p{
+						color:$gris-text;
+						text-align: left;
+						font-size: 0.65em;
+						font-weight: normal;
+						line-height: 2.2;
+						& span{
+							font-weight: $extra-bold;
+						}	
+					}
+				}
+
+				.info-wrap{
+					text-align: center;
+					.banner-side{}
+					a.btnSolicitar{
+						background-color: $azul-claro;
+						color: $blanco;
+						text-align: center;
+						font-weight: $extra-bold;
+					}
+				}
+
+			}//.destacados_prod
+		}
+
+
+
+
+	//productos single index bann
+	.prod-single--ban{
+		width: 100%;
+		margin: 0 !important;
+		@include desde (web){
+			@include cuadricula(box-item-single--ban,3,30px);
+		
+		}
+		.box-item-single--ban{
+			display: none ;
+			@include desde (web){
+				display: block;
+			}
+			.prod-single__img--ban{
+				position: relative;
+				padding: 73px 20px;
+				margin-bottom: 30px;
+			    display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    //elementos posicionados
+
+				.item-gif-destacados,
+				.item-instalacion-destacados{
+					position: absolute;
+				}
+				.item-gif-destacados{
+					left: 20px;
+					top: 45px;
+					width: 25.5%;
+					@include desde (hd){
+						left: 30px;
+						top: 35px;
+					}
+				}
+				.item-instalacion-destacados{
+					right: 15px;
+					top: 150px;//22
+					padding: 10px 8px;
+					background-color: #F5A623;
+					width: 27%;
+					p{
+						color: #ffffff;
+						text-align: center;
+						font-weight: 700;
+						margin: 0;
+						font-size: 0.6em;
+						text-transform: uppercase;
+					}
+				}
+
+
+
+				@include desde (web){
+
+				}
+			}
+		}//fin box-item-single
+		.infoMobile{
+			display: block;
+			@include desde (tablet){
+				display: none;
+			}
+			text-align: center;
+			h1{
+				border:none;
+				text-align: center;
+				@include desde (tablet){
+					font-size: 1.2em;
+				}
+			}
+			p{
+				color: $azul-claro;
+				font-weight: $normal;
+				font-style: italic;
+				border-bottom: 1px solid $azul-claro;
+				width: 65%;
+				display: block;
+				margin: 0 auto;
+				@include desde (tablet){
+					width: 85%;
+				}
+			}
+			.precio{
+				color:$gris-text;
+				font-style: normal;
+				font-size: 0.9em;
+				width: 100%;
+				border: none;
+				margin-top: 5px;
+				@include desde (tablet){
+					font-size: 0.8em;
+				}
+			}
+			h3{
+				color:$azul-claro;
+				font-weight: $extra-bold;
+			}
+			.interes{
+				font-weight: $normal;
+				color:$azul-claro;
+				border: none;
+				font-style: normal;
+				width: 90%;
+				margin-bottom: 30px;
+			}
+			@include desde (web){
+				display: none;
+			}
+		}
+		a.btn-solicitar{
+			background-color:$solicitar;
+			color:$blanco;
+			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+			padding:20px 0;
+			display: block;
+			font-size: 1em;
+			font-weight: $extra-bold;
+		}
+
+		.list-tecnica{
+			width: 100%;
+			margin-top: 60px;
+			margin-bottom: 60px;
+			ul{
+				list-style: none;
+				padding:0;
+				margin:0;
+				li{
+					text-transform: uppercase;
+					text-align: left;
+					color:$azul-claro;
+					font-weight: $extra-bold;
+					font-size:0.9em;
+					display: block;
+					padding-left:6em;
+					letter-spacing: 2;
+					position: relative;
+					@include desde (tablet){
+						margin-bottom: 15px;
+						padding-left: 4em;
+					}
+					span{
+						font-weight: normal;
+						display: block;
+						width: 100%;
+					}
+				}
+				i{
+					//margin-right: 60px;
+					position: absolute;
+					left: 30px;
+				}
+			}
+		}//list-tecnica
+
+		a.dowload{
+			color:$gris-text ;
+			text-transform: uppercase;
+			text-align: left;
+			width: 100%;
+			padding:20px 1em;
+			display: block;
+			font-size: 1em;
+			font-weight: $extra-bold;
+			background-color: $gris-claro;
+			border:1px solid $borde-color;
+			position: relative;
+			font-size: 0.9em;
+			margin-bottom: 50px;
+			& i{
+				position: absolute;
+				right: 1em;
+			}
+		}
+
+		//col2
+
+		.box-item-single__data_gray--ban{
+			padding:20px;
+			p{
+				color:$azul-claro;
+				text-align: left;
+				font-size: 0.9em;
+				font-weight: $extra-bold;
+			}
+			.cuotas--ban{
+				color:$azul-claro;
+				text-align: left;
+				font-size: 1.4em;
+				font-weight: $extra-bold;
+				margin-bottom: 15px;
+				width: 85%;
+
+			}
+			.texto-bajada--ban {
+				font-size: 0.7em;
+				color:$gris-text;
+				text-align: left;
+				font-weight: $normal;
+				& span{
+					font-weight: $extra-bold;
+				}
+			}
+
+			.img-targ-bancos--ban{
+				margin: 15px 0; 
+			}
+
+		}
+
+		.otros-medios--ban{
+			p {
+				color:$gris-text;
+				font-size: 0.8em;
+				text-align: left;
+				padding: 0 0 0 8px;
+				margin-top: 15px
+			}
+		}
+		.banner-aside{
+			background-color:#28bde7;
+			text-align: center;
+		}
+
+		a.solicitar--ban{
+			width: 100%;
+			padding:15px 20px;
+			font-weight: $bold;
+			text-align: center;
+			color: $blanco;
+			background-color: $azul-claro;
+			display: block;
+			margin-top: 30px;
+			text-transform: uppercase;
+		}
+
+		.banner-aside-bottom{
+			margin-top: 15px;
+			margin-bottom: 40px;
+			@include desde (web){
+				margin-top: 30px;
+			}
+
+			.banner-aside__asesoria{
+				background-color: $verde;
+				.box-text-data{
+					padding: 40px;
+					background-color: $verde;
+					@include desde (tablet){
+						padding:16px;
+					}
+					@include desde (web){
+						padding:36px;
+					}
+					p{
+						color:$blanco;
+						text-align: center;
+						font-size: 1.2em;
+						span{
+							font-weight: $extra-bold;
+						}
+						@include desde (tablet){
+							text-align: center;
+							font-size: 1.1em;
+						}
+						@include desde (web){
+							text-align: center;
+							font-size: 1em;
+						}
+						@include desde (hd){
+							text-align: center;
+							font-size: 1.3em;
+						}
+					}
+				}//.box-text-data
+				.box-img-data{
+				    width: 100%;
+				    overflow: hidden;
+				    height: 164px;
+				    background:url(../img/tipometrogas.jpg);
+				    background-size: cover;
+				    @include desde (web){
+				    	height: auto;
+				    }
+				}
+
+			}
+		}		
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//productos single
+	.prod-single{
+		width: 100%;
+		margin: 0 !important;
+		@include desde-hasta (base,movil){
+			@include cuadricula(box-item-single,1);
+		}
+		@include desde (movil){
+			@include cuadricula(box-item-single,1);
+		}
+		@include desde (tablet){
+			@include cuadricula(box-item-single,3);
+		}
+		@include desde (web){
+			@include cuadricula(box-item-single,3,30px);
+		}
+		.box-item-single{
+			.prod-single__img{
+				position: relative;
+				padding: 73px 20px 0px 20px;
+				margin-bottom: 0px;//30
+			    display: -webkit-box;
+			    display: -moz-box;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    //elementos posicionados
+				
+				.item-gif-destacados,
+				.item-instalacion-destacados{
+					position: absolute;
+				}
+				.item-gif-destacados{
+					left: 10px;
+					top: 25px;
+					width: 28%;
+					
+				}
+				.item-instalacion-destacados{
+					right: 15px;
+					top: 42px;//22
+					padding: 10px 8px;
+					background-color: #F5A623;
+					width: 30%;
+					@include desde (web){
+						margin-top: 42px;
+					}
+					p{
+						color: #ffffff;
+						text-align: center;
+						font-weight: 700;
+						margin: 0;
+						font-size: 0.6em;
+					}
+				}
+
+
+				@include desde (web){
+
+				}
+			}
+		}//fin box-item-single
+		.infoMobile{
+			display: block;
+			@include desde (tablet){
+				display: none;
+			}
+			text-align: center;
+			h1{
+				border:none;
+				text-align: center;
+				@include desde (tablet){
+					font-size: 1.2em;
+				}
+			}
+			p{
+				color: $azul-claro;
+				font-weight: $normal;
+				font-style: italic;
+				border-bottom: 1px solid $azul-claro;
+				width: 65%;
+				display: block;
+				margin: 0 auto;
+				@include desde (tablet){
+					width: 85%;
+				}
+			}
+
+			.precio{
+				color:$gris-text;
+				font-style: normal;
+				font-size: 0.9em;
+				width: 100%;
+				border: none;
+				margin-top: 5px;
+				@include desde (tablet){
+					font-size: 0.8em;
+				}
+			}
+			h3{
+				color:$azul-claro;
+				font-weight: $extra-bold;
+			}
+			.interes{
+				font-weight: $normal;
+				color:$azul-claro;
+				border: none;
+				font-style: normal;
+				width: 90%;
+				margin-bottom: 30px;
+			}
+			@include desde (web){
+				display: none;
+			}
+		}
+		a.btn-solicitar{
+			background-color:$solicitar;
+			color:$blanco;
+			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+			padding:20px 0;
+			display: block;
+			font-size: 1em;
+			font-weight: $extra-bold;
+		}
+
+		.fichatecnica{
+			color: #B5B5B5;
+			text-transform: uppercase;
+			text-align: left;
+			width: 100%;
+			padding: 20px 1em;
+			display: block;
+			font-size: 1em;
+			font-weight: 800;
+			background-color: #F7F7F7;
+			border: 1px solid #E8E8E8;
+			position: relative;
+			font-size: 0.9em;
+			margin-bottom: 0px;
+			& i{
+				position:absolute;
+				right: 10px;
+			}
+			.content{
+				margin-top: 15px;
+				ul{
+					margin: 0;
+					padding:0;
+					list-style: none;
+					li{
+						font-size: 0.9em;
+						font-weight: normal;
+						
+						& span{
+							text-align: left;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		.list-tecnica{
+			width: 100%;
+			margin-top: 0px;//60
+			margin-bottom: 30px;//0
+			ul{
+				list-style: none;
+				padding:0;
+				margin:0;
+				li{
+					text-transform: uppercase;
+					text-align: left;
+					color:$azul-claro;
+					font-weight: $extra-bold;
+					font-size:0.9em;
+					display: block;
+					padding-left:6em;
+					letter-spacing: 2;
+					position: relative;
+					@include desde (tablet){
+						margin-bottom: 15px;
+						padding-left: 4em;
+					}
+					span{
+						font-weight: normal;
+						display: block;
+						width: 100%;
+					}
+				}
+				i{
+					//margin-right: 60px;
+					position: absolute;
+					left: 30px;
+				}
+			}
+		}//list-tecnica
+
+		a.dowload{
+			color:$gris-text ;
+			text-transform: uppercase;
+			text-align: left;
+			width: 100%;
+			padding:20px 1em;
+			display: block;
+			font-size: 1em;
+			font-weight: $extra-bold;
+			background-color: $gris-claro;
+			border:1px solid $borde-color;
+			position: relative;
+			font-size: 0.9em;
+			margin-bottom: 50px;
+			& i{
+				position: absolute;
+				right: 1em;
+			}
+		}
+
+		//col2
+
+		.box-item-single__data_gray{
+			padding:20px;
+			p{
+				color:$gris-text;
+				text-align: left;
+				font-size: 0.9em;
+				font-weight: $normal;
+			}
+			.cuotas{
+				color:$azul-claro;
+				text-align: left;
+				font-size: 1.6em;
+				font-weight: $extra-bold;
+				margin-bottom: 15px;
+			}
+			.texto-bajada {
+				font-size: 0.9em;
+				color:$gris-text;
+				text-align: left;
+				& span{
+					font-weight: $extra-bold;
+				}
+			}
+
+			.img-targ-bancos{
+				margin: 0px 0; 
+			}
+
+			ul.tI-cT{
+				margin: 0 0 0 0;
+				padding:0;
+				list-style: none;
+				li{
+					display: inline-block;
+					color:$gris-text;
+					font-weight: $normal;
+					font-size: 0.9em;
+					text-align: left;
+				}
+			}
+
+			ul.tI-cT-b{
+				margin: 1em 0 0 0;
+				padding:0;
+				list-style: none;
+				li{
+					display: inline-block;
+					color:$gris-text;
+					font-weight: $normal;
+					font-size: 0.9em;
+					text-align: left;
+				}
+			}
+
+			p.cB{
+				color:$azul-claro !important;
+				text-align: left;
+				font-size: 0.9em;
+				font-weight: bold;
+			}
+
+			.descuentos-single{
+				width: 100%;
+				.porcentaje-single{
+					p{
+						color: $gold;
+						font-weight: $extra-bold;
+						font-size: 2.3em;
+						margin-left: 35px;
+						@include desde (tablet){
+							margin-left: 10px;
+						}
+						@include desde (web){
+							font-size: 2.5em;
+							margin-left: 40px;
+						}
+					}
+				}
+				.logo-socio-single{
+					p{
+						color: $gold;
+						font-weight: $extra-bold;
+						font-size: 0.7em;
+						margin-bottom: 0;
+						margin-top: 10px;
+
+					}
+					img{
+						width: 78%;
+					}
+				}
+				p.td{
+					color: $gold;
+					text-transform: uppercase;
+					font-weight: $light;
+					font-size: 0.7em;
+					@include desde (web){
+						font-size: 0.9em;
+					}
+				}
+			}
+			.porcentaje-blue-single{
+				
+					p.porc{
+						color:$azul-claro;
+						font-weight: $extra-bold;
+						font-size: 1.9em;
+						margin-left: 50px;
+						@include desde (tablet){
+							margin-left: 10px;
+						}
+						@include desde (web){
+							margin-left: 60px;
+						}
+					}
+
+			}
+			.no-socio-single{
+				p{
+					color:$azul-claro;
+					text-transform: uppercase;
+					font-weight: $extra-bold;
+					font-size: 0.7em;
+					width: 65%;
+					margin-top: 11px;
+					line-height: 12px;
+				}
+			}
+			p.td-b{
+				color: $azul-claro;
+				text-transform: uppercase;
+				font-weight: $light;
+				font-size: 0.7em;
+				@include desde (web){
+					font-size: 0.8em;
+					margin-left: 15px;
+				}
+			}
+		}
+
+		.otros-medios{
+			p {
+				color:$gris-text;
+				font-size: 0.8em;
+				text-align: left;
+				padding: 0 0 0 8px;
+				margin-top: 15px;
+			}
+		}
+		.banner-aside{
+			background-color:#28bde7;
+			text-align: center;
+		}
+		.banner-aside-bottom{
+			margin-top: 15px;
+			margin-bottom: 40px;
+			@include desde (web){
+				margin-top: 30px;
+			}
+
+			.banner-aside__asesoria{
+				background-color: $verde;
+				.box-text-data{
+					padding: 40px;
+					background-color: $verde;
+					@include desde (tablet){
+						padding:16px;
+					}
+					@include desde (web){
+						padding:36px;
+					}
+					p{
+						color:$blanco;
+						text-align: center;
+						font-size: 1.2em;
+						span{
+							font-weight: $extra-bold;
+						}
+						@include desde (tablet){
+							text-align: center;
+							font-size: 1.1em;
+						}
+						@include desde (web){
+							text-align: center;
+							font-size: 1em;
+						}
+						@include desde (hd){
+							text-align: center;
+							font-size: 1.3em;
+						}
+					}
+				}//.box-text-data
+				.box-img-data{
+				    width: 100%;
+				    overflow: hidden;
+				    height: 164px;
+				    background:url(../img/tipometrogas.jpg);
+				    background-size: cover;
+				    @include desde (web){
+				    	height: auto;
+				    }
+				}
+
+			}
+		}		
+
+	}
+	//aux
+	.addGray{
+		background-color: $gris-claro;
+	}
+	
+
+
+	.paginator{
+		width: 100%;
+		margin-bottom: 35px;
+		@include desde (tablet){
+			display: none;
+		}
+		ul{
+			padding:0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li{
+				
+								//padding: 10px;
+				a{
+					background-color: $gris-claro;
+					text-align: right;
+					display: block;	
+					color:$gris-text;
+					padding:10px 20px;
+					font-size: 10px;
+					height: 50px;
+					span{
+						width: 100%;
+						display: block;
+						font-weight: $extra-bold;
+					}
+				}
+				.verAlign{
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+
+	.paginator-full{
+		width: 100%;
+		margin-bottom: 35px;
+		display: none;
+		@include desde (tablet){
+			display: block;
+		}
+		ul{
+			padding:0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li{
+				
+								//padding: 10px;
+				a{
+					background-color: #f5f5f5;
+					text-align: right;
+					display: block;	
+					color:$gris-text;
+					padding:10px 15px;
+					font-size: 10px;
+					//height: 50px;
+					@include desde (tablet){
+						padding:10px 20px;
+					}
+					@include desde (web){
+						padding:15px 30px;
+						font-size: 12px;
+					}
+					
+					span{
+
+						font-weight: $normal;
+					}
+				}
+				.box-num{
+					background-color: #f5f5f5;
+					color:$gris-text;
+					font-weight: $extra-bold;
+				}
+			}
+		}
+	}
+
+}//section.main
+
+section.disclaim{
+	width: 100%;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	.box-text-data{
+		padding: 40px;
+		background-color: $verde;
+		@include desde (web){
+			height: 193px;
+		}
+		p{
+			color:$blanco;
+			text-align: center;
+			font-size: 1.2em;
+				span{
+					font-weight: $extra-bold;
+					@include desde (web){
+						display: block;
+						width: 70%;
+						float: right;
+					}
+
+					@include desde (prehd){
+						display: block;
+						width: 75%;
+						float: right;
+					}
+
+					@include desde (hd){
+						width: 103%;
+					}
+
+				}
+			@include desde (tablet){
+				text-align: right;
+			}
+			@include desde (web){
+				margin-top: 12px;
+			}
+			@include desde (prehd){
+				display: block;
+				width: 73%;
+				float: right;
+			}
+			@include desde (hd){
+				float: right;
+				width: 50%;
+				display: inherit;
+			}
+		}
+	}//.box-text-data
+	.box-img-data{
+	    width: 100%;
+	    overflow: hidden;
+	    height: 164px;
+	    background:url(../img/tipometrogas.jpg);
+	    background-size:cover;
+	    @include desde (web){
+	    	height: 193px;
+	    }
+	}
+}
+
+section.legal{
+	p.first,
+	p.second{
+		font-size: 0.5em;
+		text-align: left;
+		& span{
+			font-weight: $extra-bold;
+			font-size: 1em;
+		}
+		@include desde (tablet){
+			font-size: 0.7em;
+		}
+	}
+	p.first{
+		color:$azul;
+		margin-bottom: 3.5em;
+	}
+	p.second{
+		color:$more-claro;
+	}
+}
+
+
+//video
+.ed-video__box{
+	margin-bottom: 25px;
+	img{
+		display: block;
+	}
+}
+
+.valoracion{
+	@include cuadricula (valoracion-cudricula,1);
+	@include desde (tablet){
+		@include cuadricula (valoracion-cudricula,3);	
+	}
+	.valoracion-cudricula{
+		margin-bottom: 20px;
+	}
+	.valoracion__item-1{
+		border:1px solid $azul-claro;
+		padding: 30px 30px;
+		.icon-concep{
+			.icon-concep-titulo{
+				width: 45px;
+				height: 45px;
+				background-color: $azul-claro;
+				margin: 0px auto 5px auto;
+				border-radius:50px;
+			}
+			.icon-title{
+				text-align: center;
+				font-weight: $extra-bold;
+				color:$azul-claro;
+				font-size: 1.5em;
+				margin-bottom: 30px;
+			}
+		}
+		ul.list-concept-1{
+			margin: 0;
+			padding:0;
+			li{
+				color: $azul-claro;
+				font-weight: $bold;
+				font-size: 0.9em;
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+
+	.valoracion__item-2{
+		border:1px solid $gold;
+		padding: 30px 30px;
+		.icon-concep-2{
+			.icon-concep-titulo-2{
+				width: 45px;
+				height: 45px;
+				background-color: $gold;
+				margin: 0px auto 5px auto;
+				border-radius:50px;
+			}
+			.icon-title-2{
+				text-align: center;
+				font-weight: $extra-bold;
+				color:$gold;
+				font-size: 1.5em;
+				margin-bottom: 30px;
+			}
+		}
+		ul.list-concept-gold{
+			margin: 0;
+			padding:0;
+			li{
+				color: $gold;
+				font-weight: $bold;
+				font-size: 0.9em;
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+
+		.valoracion__item-green{
+		border:1px solid $verde;
+		padding: 30px 30px;
+		.icon-concep-green{
+			.icon-concep-titulo-green{
+				width: 45px;
+				height: 45px;
+				background-color: $verde;
+				margin: 0px auto 5px auto;
+				border-radius:50px;
+			}
+			.icon-title-green{
+				text-align: center;
+				font-weight: $extra-bold;
+				color:$verde;
+				font-size: 1.5em;
+				margin-bottom: 30px;
+			}
+		}
+		ul.list-concept-green{
+			margin: 0;
+			padding:0;
+			li{
+				color: $verde;
+				font-weight: $bold;
+				font-size: 0.9em;
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+.valoracion__item-1,.valoracion__item-2,.valoracion__item-green{
+	@include desde (tablet){
+		height: 475px;
+		margin-bottom: 45px;
+	}
+}
+
+}
+
+
+.sup{
+	display:none;
+	color:$gris-text;
+	font-size: 0.6em;
+	position: absolute;
+	@include desde (tablet){
+		display: block;
+		top: 0;
+		right: -5px;
+	}
+}
+
+.sup-center{
+	display:block;
+	color:$gris-text;
+	font-size: 0.6em;
+	position: absolute;
+	@include desde (tablet){
+		display: block;
+		top: 0;
+		right: -5px;
+	}
+}
+
+	///productos abajo
+section
+	.prod-bttm{
+		margin: 15px;
+		//border-top: 1px solid $azul-claro;
+		padding:15px 0;
+		// @include desde (tablet){
+		// 	border:none;
+		// }
+		@include desde (web){
+			margin-top:0; 
+		}
+		.item-productos{
+			text-align: center;
+			
+			
+			@include desde (tablet){
+				
+				@include cuadricula(item,3);
+			}
+
+			@include desde (web){
+				width: 100%;
+				margin-top: 1em;
+				@include cuadricula(item,3);
+			}
+
+			
+			//grilla
+			.item{
+				position: relative;
+				margin-bottom: 2em;
+				@include desde (tablet){
+					margin-bottom: 50px;
+				}
+				// @include desde (web){
+				// 	padding: 50px 0;
+				// 	background-color: #f9f9f9;
+				// }
+			     .item-gift{
+					position: absolute;
+					top: 0px;
+					left: 0;
+					width: 35%;
+					@include desde (movil){
+						width: 22%;
+						left: 20%;
+					}
+					@include desde (tablet){
+						left: 0px;
+						top:-24px;
+						width: 35%;
+					}
+					@include desde (web){
+						top: -25px;
+						left: 10px;
+						width: 25.5%;
+					}
+					@include desde (hd){
+						top: -25px;
+						width: 25%;
+						left: 10px;
+					}
+			     }
+			     .item-instalacion{
+			     	position: absolute;
+			     	right: 0;
+			     	top: 22px;
+			     	padding:10px 8px;
+			     	background-color: $gold;
+				    width: 40%;
+				    margin: 0;
+				    @include desde (movil){
+				    	right: 90px;
+				    	width: 20%;
+				    }
+				    @include desde (tablet){
+						width: 40%;
+						right: 10px;
+				    }
+				    @include desde (web){
+				    	width: 27%;
+				    	top: 20px;
+				    	right: 15px;
+				    }
+					p{
+				     	color:#ffffff;
+				     	text-align: center;
+				     	font-weight: $bold;
+				     	margin: 0;
+				     	font-size: 0.55em;
+				     	width: 100%;
+	
+				     	@include desde (web){
+				     		font-size: 0.6em;
+				     	}
+					}
+			     }
+				.img-prod{
+					text-align: center;
+					img{
+						display: block;
+						margin: 0 auto;
+						width: 80%;
+						@include desde (web){
+							width: 65%;//45
+							margin: 0 auto;
+						}
+					}
+				}
+				h2{
+					color: $azul-claro;
+					text-transform: uppercase;
+					font-size: 1.1em;//1.6
+					font-weight: $extra-bold;
+					margin-bottom: 0;//10
+				}
+				.model{
+					//font-weight: italic;
+					color:$azul-claro;
+					text-align: center;
+					//border-bottom: 1px solid $azul-claro;
+					width: 75%;
+					margin: 0 auto;
+					font-size: 0.85em;//1.1
+					//font-style: italic;
+					@include desde (tablet){
+						font-size: 0.85em;
+					}
+					@include desde (web){
+						width: 60%;
+					}
+				}
+				.descuentos{
+					width: 100%;
+					margin: 0 auto;
+					.porcentaje{
+						p{
+							color: $gold;
+							font-weight: $extra-bold;
+							text-align: right;
+							font-size: 2.4em;
+							margin: 0;
+							width: 95%;
+							@include desde (tablet){
+								font-size: 2em;
+							}
+						}	
+					}
+					.logo-socio{
+						margin-top: 12px;
+						@include desde (tablet){
+							margin-top: 8px;
+						}
+						p{
+						color: $gold;
+						text-align: left;
+						font-size: 0.6em;
+						font-weight: $extra-bold;
+						margin: 0;
+						width: 100%;							
+						}
+						img{
+							@include desde (web){
+								width: 65%;
+								float: left;
+							}
+						}
+					}
+
+				}
+
+				.porcentajes-blue{
+					width: 100%;
+					margin: 0 auto;
+					p{
+						color: $azul-claro;
+						font-weight: $extra-bold;
+						text-align: right;
+						font-size: 2em;
+						margin: 0;
+						width: 95%;
+						@include desde (tablet){
+							font-size: 1.8em;
+						}
+					}
+
+					.no-socio{
+						margin-top: 10px;
+						p{
+						color: $azul-claro;
+						text-align: left;
+						font-size: 0.6em;
+						font-weight: $extra-bold;
+						margin: 0;
+						width: 50%;							
+						}
+					}
+				}
+
+				p.precio-real{
+					margin: 15px 0 0 0;
+					color: $gris-text;
+					text-transform: uppercase;
+					@include desde (tablet){
+						margin: 14px 0 2px 0;
+						text-align: center;
+						width: 100%;
+						font-size: 0.9em;
+					}
+				}
+
+				h3{
+					color:$azul-claro;
+					text-transform: normal;
+					text-align: center;
+					font-size: 1em;
+					width: 52%;
+					margin: 26px auto;
+					font-weight: $extra-bold;
+					position: relative;
+					@include desde (web){
+						width: 50%;
+					}
+
+				}
+
+				a.seeBtn{
+					background-color: $azul-claro;
+					padding: 8px 20px;
+					color: $blanco;
+					text-align: center;
+					display: block;
+					font-weight: $extra-bold;
+					text-transform: uppercase;
+					font-size: 1em;
+					width: 50%;
+					margin: 0 auto 1em auto;
+					@include desde (tablet){
+						margin: 1em auto 1em auto;
+						width: 60%;
+						font-size: 0.8em;
+					}
+					@include desde (web){
+						padding:8px 20px;
+						width: 40%;
+					}
+				}
+				p{
+					color:$azul-claro;
+					text-transform: uppercase;
+					font-size: 0.8em;
+					margin-top: 0em;
+					& span{
+						font-weight: $extra-bold;
+					}
+			     	@include desde (tablet){
+						    width: 80%;
+						    margin: 0 auto;
+				     }
+				     @include desde (web){
+				     	width: 100%;
+				     	margin: 5px auto 0 auto;
+				     }
+				}
+			}	
+		}//fin-itemproductos
+
+	}
+
+		.item-productos-center{
+			text-align: center;
+			@include desde (tablet){
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+			}	
+			.item-center-center{
+				width: 315px;
+				position: relative;
+				margin: 0 auto 50px auto;
+				@include desde (tablet){
+					margin-top:initial; 
+					margin-bottom:50px; 
+					margin-left:initial; 
+					margin-right:initial; 
+
+				}
+				.item-gift-center{
+					position: absolute;
+					top: 0px;
+					left: 20px;
+					width: 29%;
+					@include desde (tablet){
+						width: 25%;
+						left: 40px;
+					}
+					@include desde (web){
+						left: 12px;
+					}
+				}
+				.item-instalacion-center{
+					position: absolute;
+					right: 40px;
+					top: 22px;
+					padding:10px 8px;
+					background-color: $gold;
+					width: 32%;
+					@include desde (movil){
+						width: 26%;
+					}
+					@include desde (tablet){
+						width: 30%;
+					}
+					@include desde (web){
+						right: 20px;
+						top: 18px;
+					}
+					p{
+						color:$blanco;
+						font-size: 0.55em;///0.6
+						margin: 0;
+						font-weight: $bold;
+						width: 100%;
+					}
+				}
+				.img-prod-center{
+					text-align: center;
+					
+					img{
+						display: block;
+						margin: 0 auto;
+						@include desde (web){
+							width: 45%;
+							margin: 0 auto;
+						}
+					}
+
+				}
+				h2{
+					color: $azul-claro;
+					text-transform: uppercase;
+					font-size: 1.6em;
+					font-weight: $extra-bold;
+					margin-bottom: 10px;
+				}
+				.model-center{
+					font-weight: italic;
+					color:$azul-claro;
+					text-align: center;
+					border-bottom: 1px solid $azul-claro;
+					width: 64%;
+					margin: 0 auto;
+					font-size: 1.1em;
+					font-style: italic;
+				}
+				h3{
+					color:$azul-claro;
+					text-transform: normal;
+					text-align: center;
+					font-size: 1em;
+					width: 45%;
+					margin: 26px auto;
+					font-weight: $extra-bold;
+					position: relative;
+				}
+				a.seeBtn-center{
+					background-color: $azul-claro;
+					padding: 16px 20px;
+					color: $blanco;
+					text-align: center;
+					display: block;
+					font-weight: $extra-bold;
+					text-transform: uppercase;
+					font-size: 1em;
+					width: 50%;
+					@include desde (movil){
+						width: 66%;
+					}
+					@include desde (tablet){
+						width: 37%;
+					}
+					margin: 0 auto 1em auto;
+					@include desde (web){
+						padding:10px 20px;
+						width: 49%;
+					}
+				}
+				p{
+					color:$azul-claro;
+					text-transform: uppercase;
+					font-size: 0.8em;
+					margin-top: 1.5em;
+					@include desde (tablet){
+						width: 60%;
+						margin: 0 auto;
+					}
+					@include desde (web){
+						width: 100%;
+						margin:inherit;
+					}
+					& span{
+						font-weight: $extra-bold;
+					}
+				}
+			}
+		}
