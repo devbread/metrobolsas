@@ -3158,10 +3158,10 @@ section.main .prod-single--ban, section.mainban .prod-single--ban {
       section.main .prod-single--ban .banner-aside-bottom, section.mainban .prod-single--ban .banner-aside-bottom {
         margin-top: 30px; } }
     section.main .prod-single--ban .banner-aside-bottom .banner-aside__asesoria, section.mainban .prod-single--ban .banner-aside-bottom .banner-aside__asesoria {
-      background-color: #92C064; }
+      background-color: #A0B922; }
       section.main .prod-single--ban .banner-aside-bottom .banner-aside__asesoria .box-text-data, section.mainban .prod-single--ban .banner-aside-bottom .banner-aside__asesoria .box-text-data {
         padding: 40px;
-        background-color: #92C064; }
+        background-color: #A0B922; }
         @media screen and (min-width: 768px) {
           section.main .prod-single--ban .banner-aside-bottom .banner-aside__asesoria .box-text-data, section.mainban .prod-single--ban .banner-aside-bottom .banner-aside__asesoria .box-text-data {
             padding: 16px; } }
@@ -3519,10 +3519,10 @@ section.main .prod-single, section.mainban .prod-single {
       section.main .prod-single .banner-aside-bottom, section.mainban .prod-single .banner-aside-bottom {
         margin-top: 30px; } }
     section.main .prod-single .banner-aside-bottom .banner-aside__asesoria, section.mainban .prod-single .banner-aside-bottom .banner-aside__asesoria {
-      background-color: #92C064; }
+      background-color: #A0B922; }
       section.main .prod-single .banner-aside-bottom .banner-aside__asesoria .box-text-data, section.mainban .prod-single .banner-aside-bottom .banner-aside__asesoria .box-text-data {
         padding: 40px;
-        background-color: #92C064; }
+        background-color: #A0B922; }
         @media screen and (min-width: 768px) {
           section.main .prod-single .banner-aside-bottom .banner-aside__asesoria .box-text-data, section.mainban .prod-single .banner-aside-bottom .banner-aside__asesoria .box-text-data {
             padding: 16px; } }
@@ -3626,7 +3626,7 @@ section.disclaim {
   margin-bottom: 55px; }
   section.disclaim .box-text-data {
     padding: 40px;
-    background-color: #92C064; }
+    background-color: #A0B922; }
     @media screen and (min-width: 1024px) {
       section.disclaim .box-text-data {
         height: 193px; } }
@@ -3768,25 +3768,25 @@ section.legal p.second {
         .valoracion .valoracion__item-2 ul.list-concept-gold li:last-child {
           margin-bottom: 0; }
   .valoracion .valoracion__item-green {
-    border: 1px solid #92C064;
+    border: 1px solid #A0B922;
     padding: 30px 30px; }
     .valoracion .valoracion__item-green .icon-concep-green .icon-concep-titulo-green {
       width: 45px;
       height: 45px;
-      background-color: #92C064;
+      background-color: #A0B922;
       margin: 0px auto 5px auto;
       border-radius: 50px; }
     .valoracion .valoracion__item-green .icon-concep-green .icon-title-green {
       text-align: center;
       font-weight: 800;
-      color: #92C064;
+      color: #A0B922;
       font-size: 1.5em;
       margin-bottom: 30px; }
     .valoracion .valoracion__item-green ul.list-concept-green {
       margin: 0;
       padding: 0; }
       .valoracion .valoracion__item-green ul.list-concept-green li {
-        color: #92C064;
+        color: #A0B922;
         font-weight: 700;
         font-size: 0.9em;
         margin-bottom: 15px; }
@@ -4235,7 +4235,8 @@ section.preguntas {
 
 section.entrar {
   background-color: #305D91;
-  color: #fff; }
+  color: #fff;
+  padding: 30px 0; }
   section.entrar .entrar-text h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.1em;
@@ -4244,6 +4245,8 @@ section.entrar {
     font-family: "Montserrat", sans-serif;
     font-size: 0.8em;
     font-weight: 400; }
+  section.entrar .entrar-text hr {
+    color: #E6E6E6; }
   section.entrar form.formulario {
     border: 1px solid #FFF;
     padding: 25px 20px;
@@ -4277,10 +4280,163 @@ section.entrar {
       width: auto;
       margin: 10px;
       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); }
+    section.entrar .botones span img {
+      margin: 10px auto;
+      width: 8%; }
 
 section.legal-entrar {
+  text-align: center;
   background-color: #284F7A;
-  color: #fff; }
+  color: #fff;
+  padding: 35px 15px; }
+  section.legal-entrar .legal {
+    margin-bottom: 15px; }
+    section.legal-entrar .legal p.first, section.legal-entrar .legal p.second {
+      line-height: 1.5;
+      font-size: 0.6em;
+      font-family: Arial,sans-serif; }
+  section.legal-entrar hr {
+    margin: 3em 0.2em;
+    color: #E6E6E6; }
+  section.legal-entrar .mapa h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase; }
+  section.legal-entrar .mapa ul {
+    padding: 0; }
+    section.legal-entrar .mapa ul li {
+      list-style: none; }
+      section.legal-entrar .mapa ul li a {
+        font-size: 0.8em;
+        font-family: "Montserrat", sans-serif;
+        color: #fff; }
+  section.legal-entrar .datos-footer {
+    text-align: center; }
+    section.legal-entrar .datos-footer p {
+      font-size: 0.8em;
+      font-family: "Montserrat", sans-serif;
+      color: #fff; }
+
+section.pasos .pasos-text, section.pasos .resultado-metrobolsa, section.pasos .bolsas-elegir {
+  font-family: "Montserrat", sans-serif; }
+  section.pasos .pasos-text h2, section.pasos .pasos-text h6, section.pasos .resultado-metrobolsa h2, section.pasos .resultado-metrobolsa h6, section.pasos .bolsas-elegir h2, section.pasos .bolsas-elegir h6 {
+    font-size: 1.2em;
+    color: #3669A3;
+    text-transform: uppercase;
+    font-weight: 700; }
+    section.pasos .pasos-text h2 span, section.pasos .pasos-text h6 span, section.pasos .resultado-metrobolsa h2 span, section.pasos .resultado-metrobolsa h6 span, section.pasos .bolsas-elegir h2 span, section.pasos .bolsas-elegir h6 span {
+      font-weight: 400;
+      font-size: 0.9em; }
+  section.pasos .pasos-text .direccion, section.pasos .resultado-metrobolsa .direccion, section.pasos .bolsas-elegir .direccion {
+    color: #F365A4;
+    font-weight: 700; }
+  section.pasos .pasos-text .indicacion, section.pasos .resultado-metrobolsa .indicacion, section.pasos .bolsas-elegir .indicacion {
+    color: #3669A3;
+    font-size: 0.8em; }
+  section.pasos .pasos-text .bold, section.pasos .resultado-metrobolsa .bold, section.pasos .bolsas-elegir .bold {
+    display: block;
+    font-weight: 700;
+    color: #3669A3; }
+  section.pasos .pasos-text .precio-verde, section.pasos .resultado-metrobolsa .precio-verde, section.pasos .bolsas-elegir .precio-verde {
+    font-weight: 700;
+    color: #A0B922; }
+section.pasos .resultado-metrobolsa {
+  text-align: center;
+  padding: 40px 10px 50px; }
+  section.pasos .resultado-metrobolsa h2 {
+    text-align: left;
+    text-transform: none;
+    font-size: 1em; }
+section.pasos form.formulario label {
+  font-size: 0.7em;
+  color: #3669A3;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif; }
+section.pasos form.formulario input[type="text"] {
+  width: 100%;
+  display: block;
+  margin: 15px auto;
+  padding: 8px 6px;
+  border: 1px solid #DBDBDB;
+  font-family: "Montserrat", sans-serif; }
+section.pasos form.formulario input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #F365A4;
+  padding: 10px 30px;
+  border: 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-weight: 700; }
+section.pasos .consumo-actual {
+  border: 1px solid #DBDBDB;
+  margin: 20px 0; }
+  section.pasos .consumo-actual span img {
+    margin: 15px; }
+  section.pasos .consumo-actual .titulo-consumo {
+    font-family: "Montserrat", sans-serif;
+    color: #3669A3;
+    font-size: 0.6em;
+    font-weight: 700; }
+  section.pasos .consumo-actual .numero-consumo {
+    font-family: "Montserrat", sans-serif;
+    color: #3669A3;
+    font-size: 1em;
+    font-weight: 700; }
+section.pasos .recomendacion-consumo {
+  display: block;
+  padding: 8px 5px;
+  background-color: #3669A3;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
+  section.pasos .recomendacion-consumo .titulo-recomendacion {
+    font-size: 1.2em; }
+  section.pasos .recomendacion-consumo .nombre-metrobolsa, section.pasos .recomendacion-consumo .metrobolsa-recomendacion, section.pasos .recomendacion-consumo .valor-metrobolsa-recomendacion {
+    margin: 0 30% 0 0; }
+  section.pasos .recomendacion-consumo input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #F365A4;
+    padding: 10px 30px;
+    border: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-weight: 700; }
+section.pasos .bolsas-mas-compradas {
+  font-family: "Montserrat", sans-serif;
+  color: #3669A3;
+  text-align: center; }
+  section.pasos .bolsas-mas-compradas h6 {
+    font-size: 0.8em; }
+  section.pasos .bolsas-mas-compradas hr {
+    border: 1px solid #3669A3; }
+  section.pasos .bolsas-mas-compradas img {
+    margin: 25px auto; }
+section.pasos .bolsas-comprar {
+  border: 1px solid #DBDBDB;
+  margin: 20px 0;
+  padding: 5px; }
+  section.pasos .bolsas-comprar .titulo-consumo {
+    font-family: "Montserrat", sans-serif;
+    color: #3669A3;
+    font-size: 0.6em;
+    font-weight: 700; }
+  section.pasos .bolsas-comprar .numero-consumo {
+    font-family: "Montserrat", sans-serif;
+    color: #3669A3;
+    font-size: 0.6em;
+    font-weight: 700; }
+  section.pasos .bolsas-comprar input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #F365A4;
+    padding: 5px 15px;
+    border: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    font-weight: 700; }
 
 .boton, .button, button {
   display: inline-block;

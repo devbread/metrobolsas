@@ -52,28 +52,75 @@
         </div>
       </div>
     </header>
-    <section class="entrar">
+    <section class="pasos">
       <div class="ed-container full">
         <div class="ed-item base-100">
-          <div class="entrar-text">
-            <h2>Entrar</h2>
+          <div class="pasos-text">
+            <h2>Paso 1 <span>Información</span></h2>
             <hr>
-            <p>Puedes entrar con tus datos de domicilio o puedes entrar ingresando tu número de cliente.</p>
+            <p class="direccion">PORTUGAL 551 DEPTO  2319</p>
           </div>
         </div>
         <div class="ed-item base-100">
-          <div class="botones"><a href="#">Ingresar por dirección</a><span><img src="img/o.svg"></span><a href="#">Ingresar por número de cliente</a></div>
+          <form class="formulario">
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Adriana" name="nombre">
+            <label for="">Apellido Paterno</label>
+            <input type="text" placeholder="Johanes" name="apellido">
+            <label for="">Apellido Materno</label>
+            <input type="text" placeholder="Diaz" name="segundoapellido">
+            <label for="">Teléfono Móvil</label>
+            <input type="text" placeholder="+56976691978" name="movil">
+            <label for="">Dirección correo electrónico</label>
+            <input type="text" placeholder="ejemplo@mail.com" name="email">
+          </form>
         </div>
         <div class="ed-item base-100">
-          <form class="formulario">
-            <h5>Ingresar por dirección</h5>
-            <input type="text" placeholder="Rut: 172738327-7" name="Rut">
-            <input type="text" placeholder="Comuna" name="">
-            <input type="text" placeholder="Calle" name="">
-            <input type="text" placeholder="Número Cliente" name="Numero-cliente">
-            <input type="text" placeholder="Depto/Casa" name="depto">
-            <input type="submit" value="ingresar">
-          </form>
+          <div class="pasos-text">
+            <h2>Paso 2 <span>Recomendación</span></h2>
+            <hr>
+            <p class="indicacion">De acuerdo al consumo de calefacción registrado el 2016, te recomendamos la siguiente Metrobolsa:</p>
+            <p class="direccion">PORTUGAL 551 DEPTO  2319</p>
+          </div>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item base-100 web-100">
+          <div class="consumo-actual">
+            <div class="ed-container">
+              <div class="ed-item base-30">
+                <p class="titulo-consumo">Consumo Calefacción Actual 2016</p>
+              </div>
+              <div class="ed-item base-30"><span><img src="img/icons/arrow.png"></span></div>
+              <div class="ed-item base-30">
+                <p class="numero-consumo">245m3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item base-100">
+          <div class="recomendacion-consumo">
+            <div class="ed-container">
+              <div class="ed-item base-100 web-30">
+                <p class="titulo-recomendacion">Recomendación</p>
+              </div>
+              <div class="ed-item base-100 web-30"><span class="nombre-metrobolsa">Metrobolsa</span><span class="metrobolsa-recomendacion">245m3</span></div>
+              <div class="ed-item base-100 web-30"><span class="valor-metrobolsa-recomendacion">$000.000</span>
+                <input type="submit" value="comprar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item base-100">
+          <div class="resultado-metrobolsa">
+            <h2>Ahorro <span>con metrobolsa</span></h2>
+            <hr><span><img src="img/icons/Arrow-vertical.svg" alt=""></span>
+            <p class="indicacion">Si compras esta recomendación</p><span class="bold">ahorras</span><span class="precio-verde">$000.0000</span>
+          </div>
         </div>
       </div>
     </section>

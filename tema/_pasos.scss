@@ -1,0 +1,153 @@
+section.pasos{
+	.pasos-text,.resultado-metrobolsa,.bolsas-elegir{
+		font-family: $body--font-family;
+		h2,h6{
+			font-size: 1.2em;
+			color:$azul;
+			text-transform: uppercase;
+			font-weight: $bold;
+			span{
+				font-weight: $normal;
+				font-size: 0.9em;
+			}
+		}
+		.direccion{
+			color: $rosa;
+			font-weight: $bold;
+		}
+		.indicacion{
+			color:$azul;
+			font-size: 0.8em;
+		}
+		.bold{
+			display: block;
+			font-weight: $bold;
+			color:$azul;
+		}
+		.precio-verde{
+			font-weight: $bold;
+			color:$verde;
+		}
+	}
+	.resultado-metrobolsa{
+		text-align: center;
+		padding:40px 10px 50px;
+		h2{
+			text-align: left;
+			text-transform: none;
+			font-size: 1em;
+		}
+	}
+	form.formulario{
+		label{
+			font-size: 0.7em;
+			color:$azul;
+			font-weight: $bold;
+			font-family: $body--font-family;
+		}
+		input[type="text"]{
+			width: 100%;
+			display: block;
+			margin:15px auto;
+			padding:8px 6px;
+			border: 1px solid $gris-claro;
+			font-family: $body--font-family;
+		}
+		input[type="submit"]{
+			font-family: $body--font-family;
+			color:$blanco;
+			background-color:$rosa;
+			padding:10px 30px;
+			border:0;
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+			border-radius:3px;
+			font-weight: $bold;
+		}
+	}
+	.consumo-actual{
+		border: 1px solid $gris-claro;
+		margin: 20px 0;
+		span{
+			img{
+				margin:15px;
+			}
+		}
+		.titulo-consumo{
+			font-family: $body--font-family;
+			color:$azul;
+			font-size: 0.6em;
+			font-weight: $bold;
+		}
+		.numero-consumo{
+			font-family: $body--font-family;
+			color: $azul;
+			font-size:1em;
+			font-weight: $bold;
+		}
+	}
+	.recomendacion-consumo{
+		display: block;
+		padding:8px 5px;
+		background-color: $azul;
+		color:$blanco;
+		font-family: $body--font-family;
+		font-weight: $bold;
+		.titulo-recomendacion{
+			font-size: 1.2em;
+		}
+		.nombre-metrobolsa,.metrobolsa-recomendacion,.valor-metrobolsa-recomendacion{
+			margin:0 30% 0 0;
+		}
+		input[type="submit"]{
+			font-family: $body--font-family;
+			color:$blanco;
+			background-color:$rosa;
+			padding:10px 30px;
+			border:0;
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+			border-radius:3px;
+			font-weight: $bold;
+		}
+	}
+	.bolsas-mas-compradas{
+		font-family: $body--font-family;
+		color:$azul;
+		text-align:center;
+		h6{
+			font-size: 0.8em;
+		}
+		hr{
+			border:1px solid $azul;
+		}
+		img{
+			margin:25px auto;
+		}
+	}
+	.bolsas-comprar{
+		border: 1px solid $gris-claro;
+		margin: 20px 0;
+		padding:5px;
+		.titulo-consumo{
+			font-family: $body--font-family;
+			color:$azul;
+			font-size: 0.6em;
+			font-weight: $bold;
+		}
+		.numero-consumo{
+			font-family: $body--font-family;
+			color: $azul;
+			font-size:0.6em;
+			font-weight: $bold;
+		}
+		input[type="submit"]{
+			font-family: $body--font-family;
+			color:$blanco;
+			background-color:$rosa;
+			padding:5px 15px;
+			border:0;
+			box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+			border-radius:3px;
+			font-weight: $bold;
+		}
+	}
+}

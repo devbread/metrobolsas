@@ -21,7 +21,7 @@
   $gold         : #F5A623;
   $negro        : #000;
   $blanco       : #fff;
-  $verde        :#92C064;
+  $verde        :#A0B922;
   $gris-claro   :#DBDBDB;
   $gris-text    : #9B9B9B;
   $more-claro   : #9B9B9B;
@@ -30,6 +30,7 @@
   $rosa         :#F365A4;
   $azul-footer  : #284F7A;
   $azul-fondo   :#305D91;
+  $gris-linea   :#E6E6E6;
 
 
 // ESTILOS BASE
@@ -78,6 +79,7 @@
   @import "tema/aside";
   @import "tema/preguntas";
   @import "tema/ingresar";
+  @import "tema/pasos";
 
 
 // Modulos. Los componentes que se repiten en varias partes del proyecto

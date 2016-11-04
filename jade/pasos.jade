@@ -62,30 +62,69 @@ html(lang="es")
           //-   img(src="img/logo_ok.svg", alt="Metrogas")
         //-.ed-item.web-80.main-end.cross-center
           | Versión 1.2
-    section.entrar
+    section.pasos
       .ed-container.full
         .ed-item.base-100
-          .entrar-text
-            h2 Entrar
+          .pasos-text
+            h2 Paso 1 
+              span Información
             hr
-            p Puedes entrar con tus datos de domicilio o puedes entrar ingresando tu número de cliente.
-        .ed-item.base-100
-          .botones
-            a(href="#") Ingresar por dirección
-            span
-              img(src="img/o.svg")
-            
-            a(href="#") Ingresar por número de cliente
+            p.direccion PORTUGAL 551 DEPTO  2319
         .ed-item.base-100
           form.formulario
-            h5 Ingresar por dirección
-            input(type="text",placeholder="Rut: 172738327-7",name="Rut")
-            input(type="text",placeholder="Comuna",name="")
-            input(type="text",placeholder="Calle",name="")
-            input(type="text",placeholder="Número Cliente",name="Numero-cliente")
-            input(type="text",placeholder="Depto/Casa",name="depto")
-            input(type="submit" value="ingresar")
+            label(for="") Nombre
+            input(type="text",placeholder="Adriana",name="nombre")
+            label(for="") Apellido Paterno
+            input(type="text",placeholder="Johanes",name="apellido")
+            label(for="") Apellido Materno
+            input(type="text",placeholder="Diaz",name="segundoapellido")
+            label(for="") Teléfono Móvil
+            input(type="text",placeholder="+56976691978",name="movil")
+            label(for="") Dirección correo electrónico
+            input(type="text",placeholder="ejemplo@mail.com",name="email")
 
+        .ed-item.base-100
+          .pasos-text
+            h2 Paso 2 
+              span Recomendación
+            hr
+            p.indicacion De acuerdo al consumo de calefacción registrado el 2016, te recomendamos la siguiente Metrobolsa:
+
+            p.direccion PORTUGAL 551 DEPTO  2319
+      .ed-container
+        .ed-item.base-100.web-100
+          .consumo-actual
+            .ed-container
+              .ed-item.base-30
+                p.titulo-consumo Consumo Calefacción Actual 2016
+              .ed-item.base-30
+                span
+                  img(src="img/icons/arrow.png")
+              .ed-item.base-30
+                p.numero-consumo 245m3
+      .ed-container
+        .ed-item.base-100
+          .recomendacion-consumo
+            .ed-container
+              .ed-item.base-100.web-30
+                p.titulo-recomendacion Recomendación
+              .ed-item.base-100.web-30
+                span.nombre-metrobolsa Metrobolsa
+                span.metrobolsa-recomendacion 245m3
+              .ed-item.base-100.web-30
+                span.valor-metrobolsa-recomendacion $000.000
+                input(type="submit",value="comprar")
+      .ed-container
+        .ed-item.base-100
+          .resultado-metrobolsa
+            h2 Ahorro 
+              span con metrobolsa
+            hr
+            span
+              img(src="img/icons/Arrow-vertical.svg", alt="")
+            p.indicacion Si compras esta recomendación
+            span.bold ahorras
+            span.precio-verde $000.0000
     section.legal-entrar
       .ed-container.full
         .ed-item.base-100.tablet-100
